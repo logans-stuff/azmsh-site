@@ -26,6 +26,8 @@ jobs:
 
       - name: Build site
         run: mkdocs build --strict
+        env:
+          SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
 
   deploy:
     name: Deploy to GitHub Pages
@@ -48,6 +50,8 @@ jobs:
 
       - name: Build site
         run: mkdocs build --strict
+        env:
+          SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
 
       - name: Deploy to GitHub Pages
         run: |
