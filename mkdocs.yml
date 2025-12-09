@@ -33,8 +33,9 @@ repo_name: azmsh-site
 repo_url: https://github.com/ArizonaMeshtasticCommunity/azmsh-site
 
 plugins:
-  - offline
   - search
+  - encryptcontent: {}
+  - offline
 
 markdown_extensions: 
   - attr_list
